@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    align-items: center;
+  }
+  .container {
+    width: 550px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #dfdf5d;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    text-shadow:2px 2px 3px #0056b3;
+  }
+  form #name{
+    display: flex;
+    flex-direction: row;
+  }
+  #name #firstname, #lastname{
+    align-self: center;
+    padding: 16px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  form #other{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    margin: 20px 50px;
+  }
+  form #other #number{
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  form #other #email{
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  form #other #message{
+    box-shadow: 10px 10px 10px 0px rgba(0, 0, 0, 0.5);
+  }
+  input, textarea {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 50px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 35%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.847);
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  @media only screen and (max-width: 147px){
+         .container{
+            display: block;
+        text-align: center;
+        padding: 10px 0px;
+         }
+  }

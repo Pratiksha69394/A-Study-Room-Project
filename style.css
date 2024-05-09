@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/*
+#navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 20px black;
+}
+#navbar #logo img{
+    width: 100px;
+}
+#navbar div{
+  
+   margin: 0 20px;
+
+}
+#navbar #navLinks{
+    align-self: center;
+}
+#navbar #navLinks a{
+    margin:  0px 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbar #navLinks a:hover{
+    background-color: aliceblue;
+    box-shadow: 0px 0px 10px;
+    cursor: pointer;
+}
+*/
+
+.open-sans{font-family: 'Open Sans', sans-serif!important;}
+.noto-sans{font-family: 'Noto Sans', sans-serif!important;}
+
+/*Sidebar*/
+  .sidebar{
+    display:none;
+  	width:50%;
+  	height:100%;
+  	position:absolute;
+  	right:0;
+  	top:0;
+  	background: linear-gradient(#d9d9d9, #f2f2f2);
+  	z-index:2;
+    padding:16px;
+    transition:5s;
+  }
+
+  .Slogo{
+    font-size:64px;
+    font-weight:550;
+    text-decoration:none;
+    text-align:center;
+    letter-spacing:4px;
+    color:black;
+    display:block;
+    padding:10px;
+  }
+
+  .Slink{
+    font-size:24px;
+    font-weight:400;
+    text-decoration:none;
+    text-align:center;
+    letter-spacing:3px;
+    color:black;
+    display:block;
+    padding:10px;
+  }
+
+  .Slink:hover{
+    background-color:#ccc;
+  }
+
+  #close{
+    top:0;
+    right:0;
+    position:fixed;
+    padding:10px;
+    cursor:pointer;
+  }
+
+/*Navbar*/
+  .nav-wrapper{
+    z-index:1;
+    background-color:white;
+    padding:32px;
+    box-shadow:0px 2px 4px 0px rgba(0,0,0,.5);
+    position:relative;
+  }
+
+  .logo img{
+    width: 65px;
+    position:absolute;
+    left:2%;
+    top:50%;
+    transform:translate(0%,-50%);
+    padding:5px;
+    overflow: hidden;
+  }
+
+  .nav-container{
+    list-style:none;
+    overflow:hidden;
+    position:absolute;
+    top:50%;
+    right:5%;
+    transform:translate(0%,-50%);
+  }
+
+  .nav-item,.nav-icon{
+    float:left;
+  }
+
+  .nav-icon{
+    display:none;
+    font-size:24px;
+  }
+
+  .nav-icon .nav-link{
+    font-size:24px;
+  }
+
+  .nav-icon .nav-link:hover{
+    background:transparent;
+  }
+
+  .nav-link{
+    font-size:18px;
+    font-weight:400;
+    text-decoration:none;
+    letter-spacing:3px;
+    color:black;
+    display:block;
+    padding:10px;
+    transition:.5s;
+  }
+
+  .nav-link:hover{
+    background-color:#ccc;
+  }
+
+  @media only screen and (max-width:650px){
+    .nav-item{
+      display:none;
+    }
+    .nav-icon{
+      display:block;
+    }
+  }
+
+
+
+
+div{
+    display: block;
+}
+#main{
+    width: 100%;
+    height: 500px;
+   text-align-last: center;
+    background-image:url('img/desktop-wallpaper-anime-study.jpg');
+    background-position:center;
+}
+#main #header{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 23px;
+}
+
+#main #header h1 a{
+  color: #fff; /* Set the text color */
+  text-shadow: 0 0 10px #fff, 0 0 20px #ff9500, 0 0 30px #ff9500; /* Set the glowing effect */
+  animation: glowing 1s infinite;
+}
+@keyframes glowing {
+  0% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff9500, 0 0 30px #ff9500; /* Set initial glowing effect */
+  }
+  50% {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff9500, 0 0 40px #ff9500; /* Set intermediate glowing effect */
+  }
+  100% {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff9500, 0 0 30px #ff9500; /* Set final glowing effect */
+  }
+}
+#main #header p{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid rgb(224, 166, 83); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+    color: white;
+   
+}
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+
+/*.container{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(124, 168, 206);
+    display: flex;
+    border: 2px solid black;
+}  
+
+.box {
+    flex: 1;
+    margin: 15px;
+    padding: 40px;
+    border: 2px solid #ccc;
+}*/
+.headings{
+   text-align: center;
+   background: linear-gradient(to bottom, #d08d40, #e55388);
+}
+
+.headings h1{
+    font-size: 100px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+  }
+  .headings h2{
+    font-size: 1.5em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    margin: 0 auto; 
+  }
+ 
+.row {
+    position:-webkit-sticky;
+    padding: 20px 15px;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: flex-start; 
+    gap: 0.5em;
+    overflow: hidden;
+   background-color: black;
+   flex-wrap: wrap;
+}
+  
+  .services-col {
+    color: white;
+    text-shadow: 0 0 10px #b12c25, 0 0 20px #a84a0c, 0 0 30px #cfa90d; /* Set the glowing effect */
+  
+    flex: 1;
+    min-width: 150px;
+    min-height: 200px;
+    background: white;
+    border-radius: 10px ;
+    padding: 50px 12px;
+    box-sizing: border-box;
+    transition: 0.3;
+    text-align: center;
+   
+    
+  }
+  .row .services-col h3{
+    text-decoration: underline;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  .services-col:hover{
+    background-color: rgba(13, 13, 12, 0.788);
+    box-shadow: 3px 3px 10px 5px rgb(255, 253, 246);
+    color:white;
+    cursor: pointer;
+  }
+   #box1{
+    background-image:url('img/books.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #box2{
+    background-image:url('img/chat.avif');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  #box3{
+    background-image:url('img/relax anime.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  #box4{
+    background-image:url('img/game.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  #box5{
+    background-image:url('img/q marks img.webp');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  footer {
+    width: auto;
+    height: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  
+ }
+ 
+ .footer-section {
+    margin-bottom: 20px;
+    flex: 1;
+    padding: 15px 15px;
+    overflow: hidden;
+    flex-wrap: wrap;
+ }
+ .footer-section:hover{
+    background-color: #6666664c;
+ }
+ 
+ .footer-section h3 {
+    font-size: 18px;
+    color: #333;
+ }
+ 
+ .footer-section p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.5;
+ }
+ 
+ .footer-section a {
+    color: #007bff;
+    text-decoration: none;
+ } 
+
+ 
+
+
+ @media only screen and (max-width: 521px) { 
+  #main #header{
+     font-size: 15px;
+  }
+  .headings h1{
+    font-size: 80px;
+  }
+  .headings h2{
+    font-size: 20px
+  }
+}
+@media only screen and (max-width: 423px) { 
+  #main #header{
+     font-size: 10px;
+  }
+  .headings h1{
+    font-size: 50px;
+  }
+  .headings h2{
+    font-size: 14px
+  }
+  
+}
+@media only screen and (max-width: 297px) { 
+  #main #header{
+     font-size: 5px;
+  }
+ 
+  .headings h1{
+    font-size: 30px;
+  }
+  .headings h2{
+    font-size: 10px;
+  }
+}
+
+
+
+@media screen and (orientation: portrait) {
+  #main {
+    background-image: url("img/desktop-wallpaper-anime-study.jpg");
+    
+    background-image: 
+      image-set(
+        url("img/desktop-wallpaper-anime-study.jpg") 1x, 
+        url("img/desktop-wallpaper-anime-study.jpg") 2x
+      );
+  }
+}
+@media screen and (orientation: landscape) {
+  #main {
+    background-image: url("img/desktop-wallpaper-anime-study.jpg");
+    
+    background-image: 
+      image-set(
+        url("img/desktop-wallpaper-anime-study.jpg") 1x, 
+        url("img/desktop-wallpaper-anime-study.jpg") 2x
+      );
+
+}
+
+@media screen and (min-width: 450px) {
+  #main {
+    background-image: url("img/desktop-wallpaper-anime-study.jpg");
+    
+    background-image: 
+      image-set(
+        url("img/desktop-wallpaper-anime-study.jpg") 1x, 
+        url("img/desktop-wallpaper-anime-study.jpg") 2x
+      );
+  }
+}
+}
